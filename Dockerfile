@@ -5,7 +5,7 @@
 # ----------------------------------
 
 #Refer to the Java Container
-FROM openjdk:9-jdk-alpine
+FROM openjdk:9-jdk
 
 #Author Information
 MAINTAINER Fonix Hardcastle, <me@fonix.online>
