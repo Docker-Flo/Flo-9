@@ -11,11 +11,11 @@ FROM ubuntu-upstart
 MAINTAINER Fonix Hardcastle, <me@fonix.online>
 
 #Install and update Alpine Dependencies for the CorinthMC Containers.
-RUN apk update \
-    && apt upgrade \
+RUN apt update -y \
+    && apt upgrade -y \
     && sudo apt-get install software-properties-common python-software-properties -y \
     && sudo add-apt-repository ppa:webupd8team/java -y \
-    && apt update \
+    && apt update -y \
     && sudo apt-get install oracle-java9-installer -y \
     && apt add  curl ca-certificates openssl curl sudo git tar bash sqlite -y \
     && adduser -D -h /home/container container \
